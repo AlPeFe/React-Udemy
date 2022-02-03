@@ -1,8 +1,9 @@
-import ExpenseItemRoot from "./components/ExpenseItemRoot";
-import "./components/ExpenseItemRoot.css";
+import React from "react";
+import ExpenseItemRoot from "./components/Expenses/ExpenseItemRoot";
+import "./components/Expenses/ExpenseItemRoot.css";
 
+const App = () => {
 
-function App() {
   const expenses = [
     {
       id: "e1",
@@ -24,7 +25,14 @@ function App() {
       date: new Date(2021, 5, 12),
     },
   ];
-  return (
+
+  // return React.createElement(
+  //   'div', 
+  //   {}, 
+  // React.createElement('h2', {}, "jjj"),
+  // React.createElement(ExpenseItemRoot, {expenses: expenses})
+  // );
+   return (
     <div>
        <ExpenseItemRoot expenses={expenses} />
     </div>

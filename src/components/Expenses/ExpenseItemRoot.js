@@ -1,7 +1,7 @@
 import ExpenseItem from "./ExpenseItem";
-import Card from "./Card";
+import Card from "../UI/Card";
 
-function ExpenseItemRoot(props) {
+const ExpenseItemRoot = (props) => {
    
   return (
     <Card className="expenses">

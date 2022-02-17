@@ -9,8 +9,7 @@ const ExpenseItem = (props) =>  {
 
   //useState es un hook simpre devuelve un array deconstruido
   const [title, setTitle] = useState(props.title); //primer elemento es la variable cambiable y el segundo la function para actualizarla
-
-
+  
   const clickHandler = () =>{
     setTitle("Updated");
   };
